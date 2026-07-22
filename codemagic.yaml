@@ -1,0 +1,11 @@
+workflows:
+  android-release:
+    name: Android Release
+    max_build_duration: 30
+    scripts:
+      - ls -la
+      - gradle wrapper
+      - chmod +x gradlew
+      - ./gradlew assembleRelease
+    artifacts:
+      - app/build/outputs/apk/release/*.apk
