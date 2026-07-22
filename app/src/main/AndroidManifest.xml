@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DARK ZERO"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".ui.LoginActivity" android:exported="false" />
+        <activity android:name=".ui.MenuActivity" android:exported="false" />
+        <activity android:name=".ui.SignUpActivity" android:exported="false" />
+        <activity android:name=".ui.IklanDonasiActivity" android:exported="false" />
+        <activity android:name=".ui.BugMenuActivity" android:exported="false" />
+        <activity android:name=".ui.SenderActivity" android:exported="false" />
+        <activity android:name=".ui.InfoUserActivity" android:exported="false" />
+        <activity android:name=".ui.SettingsActivity" android:exported="false" />
+        <activity android:name=".ui.AdminPanelActivity" android:exported="false" />
+
+    </application>
+</manifest>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0d1f3c"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvInfoLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🖼️ Logo: DARK ZERO"
+        android:textColor="#00d4ff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvInfoUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👤 User: -"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tvInfoExpired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⏳ Expired: -"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tvInfoRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎖️ Role: -"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tvInfoWa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📱 WA: 08819633945 (klik)"
+        android:textColor="#00d4ff"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="⬅ KEMBALI"
+        android:backgroundTint="#1a2a4a"
+        android:textColor="#4a7a9c"
+        android:layout_marginTop="20dp"
+        android:onClick="finish" />
+
+</LinearLayout>

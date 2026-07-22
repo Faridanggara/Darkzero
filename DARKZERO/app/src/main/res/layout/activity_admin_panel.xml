@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d1f3c">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🛡️ ADMIN PANEL"
+            android:textColor="#ff6b6b"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etTargetUser"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Target User (username)"
+            android:textColorHint="#4a7a9c"
+            android:textColor="#ffffff"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etExpiredDays"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Expired (jumlah hari, contoh: 30)"
+            android:textColorHint="#4a7a9c"
+            android:textColor="#ffffff"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/spinnerRole"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginBottom="12dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4">
+
+            <Button
+                android:id="@+id/btnBan"
+                style="@style/MenuButton"
+                android:text="🚫 BAN" />
+
+            <Button
+                android:id="@+id/btnUnban"
+                style="@style/MenuButton"
+                android:text="✅ UNBAN" />
+
+            <Button
+                android:id="@+id/btnNonaktif"
+                style="@style/MenuButton"
+                android:text="⛔ NONAKTIF" />
+
+            <Button
+                android:id="@+id/btnSetRole"
+                style="@style/MenuButton"
+                android:text="🎖️ SET ROLE" />
+
+            <Button
+                android:id="@+id/btnSetExpired"
+                style="@style/MenuButton"
+                android:text="⏳ SET EXPIRED" />
+
+            <Button
+                android:id="@+id/btnRefresh"
+                style="@style/MenuButton"
+                android:text="🔄 REFRESH LOG" />
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 LOG ACTIVITY"
+            android:textColor="#00d4ff"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#0a1a2e"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="> Admin panel ready."
+                android:textColor="#4a7a9c"
+                android:textSize="12sp"
+                android:fontFamily="monospace" />
+
+        </ScrollView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="⬅ KEMBALI"
+            android:backgroundTint="#1a2a4a"
+            android:textColor="#4a7a9c"
+            android:layout_marginTop="12dp"
+            android:onClick="finish" />
+
+    </LinearLayout>
+</ScrollView>

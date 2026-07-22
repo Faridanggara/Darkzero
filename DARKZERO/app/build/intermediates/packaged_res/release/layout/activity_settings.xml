@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0d1f3c"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙️ SETTINGS"
+        android:textColor="#00d4ff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Theme Dark"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <SwitchCompat
+            android:id="@+id/swTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Animasi Loading"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <SwitchCompat
+            android:id="@+id/swAnimasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notifikasi"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <SwitchCompat
+            android:id="@+id/swNotif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etPanelUrl"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="Panel URL"
+        android:textColorHint="#4a7a9c"
+        android:textColor="#ffffff"
+        android:background="@drawable/edittext_bg"
+        android:paddingStart="16dp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etApiKey"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="API Key"
+        android:textColorHint="#4a7a9c"
+        android:textColor="#ffffff"
+        android:background="@drawable/edittext_bg"
+        android:paddingStart="16dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="💾 SAVE SETTINGS"
+        android:backgroundTint="#00d4ff"
+        android:textColor="#0d1f3c"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="⬅ KEMBALI"
+        android:backgroundTint="#1a2a4a"
+        android:textColor="#4a7a9c"
+        android:layout_marginTop="8dp"
+        android:onClick="finish" />
+
+</LinearLayout>

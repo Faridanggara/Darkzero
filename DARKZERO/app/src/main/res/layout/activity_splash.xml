@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a1a2e">
+
+    <ImageView
+        android:id="@+id/bannerImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/waveImage"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/wave_bg"
+        android:scaleType="fitXY" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="8dp"
+        android:layout_below="@id/bannerImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:progressTint="#00d4ff"
+        android:max="100" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="🚀 LOADING PAYLOAD..."
+        android:textColor="#00d4ff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="DARK ZERO v1.0"
+        android:textColor="#00aaff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

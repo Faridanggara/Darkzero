@@ -1,0 +1,122 @@
+nohup: ignoring input
+Exception in thread "DisconnectableInputStream source reader" org.gradle.api.UncheckedIOException: java.io.IOException: Bad file descriptor
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:62)
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:41)
+	at org.gradle.util.internal.DisconnectableInputStream$1.run(DisconnectableInputStream.java:127)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.base/java.io.FileInputStream.readBytes(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:276)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at org.gradle.util.internal.DisconnectableInputStream$1.run(DisconnectableInputStream.java:98)
+	... 1 more
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:javaPreCompileRelease
+> Task :app:generateReleaseResValues
+> Task :app:checkReleaseAarMetadata
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:parseReleaseLocalResources
+> Task :app:processReleaseMainManifest
+> Task :app:mergeReleaseResources
+> Task :app:processReleaseManifest
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:mergeReleaseNativeLibs
+> Task :app:checkReleaseDuplicateClasses
+
+> Task :app:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libpl_droidsonroids_gif.so.
+
+> Task :app:processReleaseManifestForPackage
+> Task :app:desugarReleaseFileDependencies
+> Task :app:extractReleaseNativeSymbolTables
+> Task :app:mergeExtDexRelease
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:mergeReleaseArtProfile
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:mergeReleaseJavaResource
+AAPT2 aapt2-8.2.0-10154469-linux Daemon #0: Unexpected error output: /data/data/com.termux/files/home/.gradle/caches/transforms-3/73091f54f6b6f57ef403b6447de0277f/transformed/aapt2-8.2.0-10154469-linux/aapt2: 2: Syntax error: Unterminated quoted string
+AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: Unexpected error output: /data/data/com.termux/files/home/.gradle/caches/transforms-3/73091f54f6b6f57ef403b6447de0277f/transformed/aapt2-8.2.0-10154469-linux/aapt2: 2: Syntax error: Unterminated quoted string
+> Task :app:processReleaseResources FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processReleaseResources'.
+> Could not resolve all files for configuration ':app:releaseRuntimeClasspath'.
+   > Failed to transform appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.category=library, org.gradle.dependency.bundling=external, org.gradle.libraryelements=aar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/3c3e8d87979f80077854f6234c4ddaef/transformed/appcompat-1.6.1.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #0: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.category=library, org.gradle.dependency.bundling=external, org.gradle.libraryelements=aar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.9.0.aar (androidx.core:core:1.9.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/f0f4ee7c3b88100b2d2cd4b05ab423cd/transformed/core-1.9.0.
+         > AAPT2 aapt2-8.2.0-10154469-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 10m 22s
+30 actionable tasks: 30 executed

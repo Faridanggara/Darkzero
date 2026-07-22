@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0d1f3c"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/banner_bg"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_logo"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#00d4ff" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User: Ridz"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvExpired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expired: 31-12-2026"
+                android:textColor="#ff6b6b"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Role: Owner"
+                android:textColor="#ffd93d"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:columnCount="2"
+        android:rowCount="4">
+
+        <Button
+            android:id="@+id/btnSignUp"
+            style="@style/MenuButton"
+            android:text="📝 SIGN UP" />
+
+        <Button
+            android:id="@+id/btnIklan"
+            style="@style/MenuButton"
+            android:text="💰 IKLAN / DONASI" />
+
+        <Button
+            android:id="@+id/btnBug"
+            style="@style/MenuButton"
+            android:text="🐛 BUG WA" />
+
+        <Button
+            android:id="@+id/btnSender"
+            style="@style/MenuButton"
+            android:text="📤 SENDER" />
+
+        <Button
+            android:id="@+id/btnInfo"
+            style="@style/MenuButton"
+            android:text="ℹ️ INFO USER" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            style="@style/MenuButton"
+            android:text="⚙️ SETTINGS" />
+
+        <Button
+            android:id="@+id/btnAdmin"
+            style="@style/MenuButton"
+            android:text="🛡️ ADMIN PANEL" />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Owner: Ridz | WA: 08819633945"
+        android:textColor="#4a7a9c"
+        android:textSize="12sp" />
+
+</LinearLayout>

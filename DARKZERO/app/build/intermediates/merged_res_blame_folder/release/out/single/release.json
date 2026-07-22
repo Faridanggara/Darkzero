@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "com.darkzero.app-merged_res-35:/layout_activity_menu.xml.flat",
+        "source": "com.darkzero.app-main-36:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/layout_activity_bug_menu.xml.flat",
+        "source": "com.darkzero.app-main-36:/layout/activity_bug_menu.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/drawable_edittext_bg.xml.flat",
+        "source": "com.darkzero.app-main-36:/drawable/edittext_bg.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/layout_activity_settings.xml.flat",
+        "source": "com.darkzero.app-main-36:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/drawable_wave_anim.xml.flat",
+        "source": "com.darkzero.app-main-36:/drawable/wave_anim.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/layout_activity_sender.xml.flat",
+        "source": "com.darkzero.app-main-36:/layout/activity_sender.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/layout_activity_splash.xml.flat",
+        "source": "com.darkzero.app-main-36:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/drawable_loading_anim.xml.flat",
+        "source": "com.darkzero.app-main-36:/drawable/loading_anim.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/anim_wave_anim.xml.flat",
+        "source": "com.darkzero.app-main-36:/anim/wave_anim.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/anim_loading_anim.xml.flat",
+        "source": "com.darkzero.app-main-36:/anim/loading_anim.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/drawable_wave_bg.xml.flat",
+        "source": "com.darkzero.app-main-36:/drawable/wave_bg.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/layout_activity_login.xml.flat",
+        "source": "com.darkzero.app-main-36:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/drawable_banner_bg.xml.flat",
+        "source": "com.darkzero.app-main-36:/drawable/banner_bg.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/layout_activity_admin_panel.xml.flat",
+        "source": "com.darkzero.app-main-36:/layout/activity_admin_panel.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/layout_activity_info_user.xml.flat",
+        "source": "com.darkzero.app-main-36:/layout/activity_info_user.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/layout_activity_iklan_donasi.xml.flat",
+        "source": "com.darkzero.app-main-36:/layout/activity_iklan_donasi.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/layout_activity_main.xml.flat",
+        "source": "com.darkzero.app-main-36:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.darkzero.app-merged_res-35:/layout_activity_signup.xml.flat",
+        "source": "com.darkzero.app-main-36:/layout/activity_signup.xml"
+    }
+]
